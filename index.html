@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="" />
 </head>
 
 <body>
@@ -38,23 +37,24 @@
 
     <article>
       <h3 id="tapasztalat">Tapasztalat</h3>
-      <ul>
-        <li><strong>2017.10 - jelenleg</strong> Rendszrmérnök</li>
-        Pneumatikus fékrendszerek gyártási szoftverének tervezése tesztelése vasúti berendezésekhez.
+      <dl>
+        <dt><strong>2017.10 - jelenleg</strong> Rendszrmérnök</dt>
+        <dd>Pneumatikus fékrendszerek gyártási szoftverének tervezése tesztelése vasúti berendezésekhez.</dd>
 
-        <li><strong>2010.11 - 2017.09 </strong> Gyártáselőkészítő (NPI)</li>
-        - Új termék bevezetése.
-        - Prototípus és mintagyártás
-        - Gyártási dokumentációk készítése: (BOM)darablisták, munkaleírások, gyárthatósági vizsgálat,
-        műveleti utasítás
-        - Árajánlatok készítése, kezelése,elő-és utó kalkulációk készítése
-        - Együttműködés ügyfelekkel és belső szervezeti egységekkel
-        - Gyártásoptimalizálás
-        - Gyártási technológia fejlesztése
-        - 2D-s és 3D-s rajzok készítése
-        <li> <strong>2009.09 - 2010.02.</strong> </li>
-        Szakmai gyakorlat - forgalomirányító berendezések gyártása,szervizelése
-      </ul>
+        <dt><strong>2010.11 - 2017.09 </strong> Gyártáselőkészítő (NPI)</dt>
+        <dd> - Új termék bevezetése.
+          - Prototípus és mintagyártás
+          - Gyártási dokumentációk készítése: (BOM)darablisták, munkaleírások, gyárthatósági vizsgálat,
+          műveleti utasítás</dd>
+        <dd>
+          - Árajánlatok készítése, kezelése,elő-és utó kalkulációk készítése
+          - Együttműködés ügyfelekkel és belső szervezeti egységekkel
+          - Gyártásoptimalizálás
+          - Gyártási technológia fejlesztése
+          - 2D-s és 3D-s rajzok készítése</dd>
+        <dt> <strong>2009.09 - 2010.02.</strong> </dt>
+        <dd> Szakmai gyakorlat - forgalomirányító berendezések gyártása,szervizelése</dd>
+      </dl>
     </article>
 
     <article>
@@ -67,58 +67,51 @@
 
     <article>
       <h3>Ismeretek</h3>
-      <ul>
-        <section>
-          <img src="./css3.png" alt="css" />
-          <p>CSS3</p>
-        </section>
-        <section>
-          <img src="./javascript.png" alt="js" />
-          <p>JavaScript</p>
-        </section>
-        <section>
-          <img src="./html5.png" alt=" html" />
-          <p>HTML5</p>
-        </section>
-        <section>
-          <img src="./mysql.png" alt="sql" />
-          <p>MySQL</p>
-        </section>
-      </ul>
+      <div>
+        <img src="./css3.png" alt="css" />
+        <h4>CSS3</h4>
+      </div>
+      <div>
+        <img src="./javascript.png" alt="js" />
+        <h4>JavaScript</h4>
+      </div>
+      <div>
+        <img src="./html5.png" alt=" html" />
+        <h4>HTML5</h4>
+      </div>
+      <div>
+        <img src="./mysql.png" alt="sql" />
+        <h4>MySQL</h4>
+      </div>
     </article>
-
   </main>
 
-  <form action="https://formspree.io/f/xwkyvlpj" method="post" id="kapcsolat">
-    <h3>Kapcsolat</h3>
-    <section>
-      <label for="vezetéknév-id">Név:</label>
-      <input type="text" name="Név" id="vezetéknév-id" placeholder="Írd be a neved" />
-    </section>
-
-    <section>
-      <label for="email-id">Email:</label>
-      <input type="email" name="fd" id="email-id" value="@" required />
-    </section>
-
-    <section>
-      <label for="tel-id">Tel.:</label>
-      <input type="tel" id="tel" name="phone" placeholder="123-45-678" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}"
-        value="+" />
-      <small>Formátum: +36-30-123-4567</small>
-    </section>
-
-    <section>
-      <label>
-        Üzenet:
-        <textarea name="Üzenet" cols="30" rows="10" placeholder="Kérdések"></textarea>
-      </label>
-    </section>
-
-    <section>
+  <section>
+    <form action="https://formspree.io/f/xwkyvlpj" method="post" id="kapcsolat">
+      <h3>Kapcsolat</h3>
+      <div>
+        <label for="vezetéknév-id">Név:</label>
+        <input type="text" name="Név" id="vezetéknév-id" placeholder="Írd be a neved" />
+      </div>
+      <div>
+        <label for="email-id">Email:</label>
+        <input type="email" name="fd" id="email-id" value="@" required />
+      </div>
+      <div>
+        <label for="tel-id">Tel.:</label>
+        <input type="tel" id="tel-id" name="phone" placeholder="123-45-678"
+          pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" value="+" />
+        <small>Formátum: +36-30-123-4567</small>
+      </div>
+      <div>
+        <label>
+          Üzenet:
+          <textarea name="Üzenet" cols="30" rows="10" placeholder="Kérdések"></textarea>
+        </label>
+      </div>
       <input type="submit" value="Űrlap beküldése" />
-    </section>
-  </form>
+    </form>
+  </section>
 
   <footer>
     <p>Tel.: 70-281-1234 </p>
