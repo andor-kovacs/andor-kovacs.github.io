@@ -99,29 +99,32 @@
 
   <section>
     <form action="https://formspree.io/f/xwkyvlpj" method="post" id="kapcsolat">
-      <h3>Kapcsolat</h3>
-      <div>
-        <label for="vezetéknév-id">Név:</label>
-        <input type="text" name="Név" id="vezetéknév-id" placeholder="Írd be a neved" />
-      </div>
-      <div>
-        <label for="email-id">Email:</label>
-        <input type="email" name="fd" id="email-id" value="@" required />
-      </div>
-      <div>
-        <label for="tel-id">Tel.:</label>
-        <input type="tel" id="tel-id" name="phone" placeholder="123-45-678"
-          pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" value="+" />
-        <small>Formátum: +36-30-123-4567</small>
-      </div>
-      <div>
-        <label>
-          Üzenet:
-          <textarea name="Üzenet" cols="30" rows="10" placeholder="Kérdések"></textarea>
-        </label>
-      </div>
-      <input type="submit" value="Űrlap beküldése" />
+      <fieldset>
+        <legend>Kapcsolat</legend>
+        <div>
+          <label for="vezetéknév-id">Név:</label>
+          <input type="text" name="Név" id="vezetéknév-id" placeholder="Írd be a neved" />
+        </div>
+        <div>
+          <label for="email-id">Email:</label>
+          <input type="email" name="fd" id="email-id" value="@" required />
+        </div>
+        <div>
+          <label for="tel-id">Tel.:</label>
+          <input type="tel" id="tel-id" name="phone" placeholder="123-45-678"
+            pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" value="+" />
+          <small>Formátum: +36-30-123-4567</small>
+        </div>
+        <div>
+          <label>
+            Üzenet:
+            <textarea name="Üzenet" cols="30" rows="10" placeholder="Kérdések"></textarea>
+          </label>
+        </div>
+        <input type="submit" value="Küldés" />
+      </fieldset>
     </form>
+
   </section>
 
   <footer>
