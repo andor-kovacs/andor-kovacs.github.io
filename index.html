@@ -5,129 +5,149 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./images/WEB-DEV.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@1,200&family=Patrick+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/23ca1b1b3d.js" crossorigin="anonymous"></script>
   <title>Kovács Andor</title>
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1>Kovács Andor</h1>
-      <h2>pályakezdő webfejlesztő</h2>
-      ​<img src="/pexels-hitesh-choudhary-340152.jpg" alt="development" width="700" height="450" />
-    </header>
 
-    <article>
+  <header class="kozos header-container">
+    <!-- <div class="logo">
+      <a href="./images/WEB-DEV.png" class="logo"> </a>
+    </div> -->
+    <div class="name">
+      <h1>Kovács Andor</h1>
+      <h3>pályakezdő webfejlesztő</h3>
+    </div>
+    <div class="valami">
+      <nav class="header-nav-container">
+        <ul class="header-menu">
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+          <li><a href="#tapasztalat">Tapasztalat</a></li>
+          <li><a href="#tanulmany">Tanulmányok</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="foto">
+
+    </section>
+
+    <section class="kozos my">
       <h3>Rólam</h3>
       <p>2021 óta foglalkozom szoftverfejlesztéssel főként az ipar számára.</p>
-    </article>
 
-    <nav>
-      <a href="#kapcsolat">Kapcsolat</a>
-      <a href="#tapasztalat">Tapasztalat</a>
-      <a href="#tanulmany">Tanulmányok</a>
-    </nav>
-
-    <article id="tanulmany">
+    </section>
+    <section class="kozos tanulmany" id="tanulmany">
       <h3>Tanulmányok</h3>
       <ul>
-        <li>2005-2010 BMF-KVK - villamosmérnök </li>
-        <li>2001-2005 Déri Miksa Műszaki Technikum - érettségi </li>
+        <li><strong> -2005-2010</strong> BMF-KVK - villamosmérnök </li>
+        <li><strong>-2001-2005</strong> Déri Miksa Műszaki Technikum - érettségi </li>
       </ul>
-    </article>
+    </section>
 
-    <div>
-      <h3 id="tapasztalat">Tapasztalat</h3>
+    <section class="kozos tapasztalat" id="tapasztalat">
+      <h3>Tapasztalat</h3>
       <ul>
-        <li><strong>2017.10 - jelenleg</strong> Rendszrmérnök
-          <ul>
-            <li> Pneumatikus fékrendszerek gyártási szoftverének tervezése tesztelése vasúti berendezésekhez. </li>
-          </ul>
-        </li>
-
-        <li><strong>2010.11 - 2017.09 </strong> Gyártáselőkészítő (NPI)
-          <ul>
-            <li> - Új termék bevezetése.
-              - Prototípus és mintagyártás
-              - Gyártási dokumentációk készítése: (BOM)darablisták, munkaleírások, gyárthatósági vizsgálat,
-              műveleti utasítás
-              - Árajánlatok készítése, kezelése,elő-és utó kalkulációk készítése
-              - Együttműködés ügyfelekkel és belső szervezeti egységekkel
-              - Gyártásoptimalizálás
-              - Gyártási technológia fejlesztése
-              - 2D-s és 3D-s rajzok készítése
-            </li>
-          </ul>
-        </li>
-
-        <li> <strong>2009.09 - 2010.02.</strong>
-          <ul>
-            <li> Szakmai gyakorlat - forgalomirányító berendezések gyártása,szervizelése </li>
-          </ul>
-        </li>
-
+        <li><strong>-2017.10 - jelenleg</strong>
+        <li> Rendszrmérnök</li>
+        <li> Pneumatikus fékrendszerek gyártási szoftverének tervezése tesztelése vasúti berendezésekhez. </li>
+        <li><strong>-2010.11 - 2017.09 </strong>
+        <li> Gyártáselőkészítő (NPI)</li>
+        <li>Új termék bevezetése.</li>
+        <li>Prototípus és mintagyártás</li>
+        <li>Árajánlatok készítése, kezelése,elő-és utó kalkulációk készítése</li>
+        <li>Együttműködés ügyfelekkel és belső szervezeti egységekkel</li>
+        <li>Gyártásoptimalizálás</li>
+        <li>Gyártási technológia fejlesztése</li>
+        <li>2D-s és 3D-s rajzok készítése</li>
+        <li> <strong>-2009.09 - 2010.02.</strong>
+        <li> Szakmai gyakorlat - forgalomirányító berendezések gyártása,szervizelése </li>
       </ul>
-    </div>
+    </section>
 
-    <article>
+    <section class="kozos cv">
       <h3>Önéletrajz</h3>
       <ul>
         <li>angol <a href="https://www.google.com" target="_blank">Letöltés</a> </li>
         <li>magyar <a href="https://www.google.com" target="_blank">Letöltés</a> </li>
       </ul>
-    </article>
+    </section>
 
-    <article>
+    <section class="kozos skills">
       <h3>Ismeretek</h3>
-      <div>
-        <img src="./css3.png" alt="css" />
-        <h4>CSS3</h4>
+      <div class="container">
+        <div class="skills-tn">
+          <img src="./images/css3.png" alt="css" />
+          <h4>CSS3</h4>
+          <p>ez meg az</p>
+        </div>
+        <div class="skills-tn">
+          <img src="./images/javascript.png" alt="js" />
+          <h4>Javascript</h4>
+          <p>ez meg az</p>
+        </div>
+        <div class="skills-tn">
+          <img src="./images/html5.png" alt=" html" />
+          <h4>HTML5</h4>
+          <p>ez meg az</p>
+        </div>
+        <div class="skills-tn">
+          <img src="./images/mysql.png" alt="sql" />
+          <h4>SQL</h4>
+          <p>ez meg az</p>
+        </div>
       </div>
-      <div>
-        <img src="./javascript.png" alt="js" />
-        <h4>JavaScript</h4>
-      </div>
-      <div>
-        <img src="./html5.png" alt=" html" />
-        <h4>HTML5</h4>
-      </div>
-      <div>
-        <img src="./mysql.png" alt="sql" />
-        <h4>MySQL</h4>
-      </div>
-    </article>
+    </section>
+
+    <section class="kozos contact">
+      <form action="https://formspree.io/f/xwkyvlpj" method="post" id="kapcsolat">
+        <fieldset class="field">
+          <legend>Kapcsolat</legend>
+          <div>
+            <label for="vezetéknév-id">Név:
+              <input type="text" name="Név" id="vezetéknév-id" placeholder="Írd be a neved" />
+            </label>
+          </div>
+          <div>
+            <label for="email-id">Email:</label>
+            <input type="email" name="fd" id="email-id" value="@" required />
+          </div>
+          <div>
+            <label for="tel-id">Tel.:</label>
+            <input type="tel" id="tel-id" name="phone" placeholder="123-45-678"
+              pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" value="+" />
+            <small>Formátum: +36-30-123-4567</small>
+          </div>
+          <div>
+            <label>
+              Üzenet:
+              <textarea name="Üzenet" cols="30" rows="10" placeholder="Kérdések"></textarea>
+            </label>
+          </div>
+          <input type="submit" value="Küldés" />
+        </fieldset>
+      </form>
+
+    </section>
   </main>
+  <footer class="kozos">
+    <nav>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 
-  <section>
-    <form action="https://formspree.io/f/xwkyvlpj" method="post" id="kapcsolat">
-      <fieldset>
-        <legend>Kapcsolat</legend>
-        <div>
-          <label for="vezetéknév-id">Név:</label>
-          <input type="text" name="Név" id="vezetéknév-id" placeholder="Írd be a neved" />
-        </div>
-        <div>
-          <label for="email-id">Email:</label>
-          <input type="email" name="fd" id="email-id" value="@" required />
-        </div>
-        <div>
-          <label for="tel-id">Tel.:</label>
-          <input type="tel" id="tel-id" name="phone" placeholder="123-45-678"
-            pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" value="+" />
-          <small>Formátum: +36-30-123-4567</small>
-        </div>
-        <div>
-          <label>
-            Üzenet:
-            <textarea name="Üzenet" cols="30" rows="10" placeholder="Kérdések"></textarea>
-          </label>
-        </div>
-        <input type="submit" value="Küldés" />
-      </fieldset>
-    </form>
-
-  </section>
-
-  <footer>
+      </ul>
+    </nav>
     <p>Tel.: 70-281-1234 </p>
     Copyright &copy;
     2022 Andor Kovács
