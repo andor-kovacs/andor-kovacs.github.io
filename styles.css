@@ -123,9 +123,6 @@ html {
   transition-duration: 0.1s;
 }
 
-.menu__item a {
-  /* display: none; */
-}
 
 .menu__item {
   display: inline-block;
@@ -618,7 +615,7 @@ footer p {
     opacity: 1;
   }
 
-  @-webkit-keyframes fill {
+  @keyframes fill {
     10% {
       width: 0%;
       height: 2px;
