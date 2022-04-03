@@ -393,11 +393,6 @@ textarea {
   border-radius: 5px;
 }
 
-.field {
-  /* min-width: 21.2rem; */
-
-}
-
 .fab {
   color: var(--color-letter);
 }
@@ -632,8 +627,6 @@ footer p {
     background-color: transparent;
   }
 
-  .social-links>li>a {}
-
   main {
     display: grid;
     grid-template-areas:
@@ -708,6 +701,5 @@ footer p {
   .container-header {
     background-size: 100% 150%;
     height: 35vw;
-
   }
 }
