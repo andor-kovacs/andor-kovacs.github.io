@@ -275,7 +275,7 @@ p {
 .portfolio-item a img {
   width: 100%;
   height: 32vw;
-
+  max-height: 400px;
 }
 
 .foto img {
