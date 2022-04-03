@@ -2,155 +2,236 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="shortcut icon" href="./images/WEB-DEV.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="shortcut icon" href="./images/WEB-DEV.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/23ca1b1b3d.js" crossorigin="anonymous"></script>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@1,200&family=Patrick+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@1,200&family=Patrick+Hand&family=Poppins:wght@300;600&family=Quicksand:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@1,200&family=Patrick+Hand&family=Poppins:wght@300;600&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
   <script src="https://kit.fontawesome.com/23ca1b1b3d.js" crossorigin="anonymous"></script>
   <title>Kovács Andor</title>
 </head>
 
 <body>
-
-  <header class="kozos header-container">
-    <!-- <div class="logo">
-      <a href="./images/WEB-DEV.png" class="logo"> </a>
-    </div> -->
-    <div class="name">
-      <h1>Kovács Andor</h1>
-      <h3>pályakezdő webfejlesztő</h3>
+  <header class="container-header"></header>
+  <nav class="header-navigation">
+    <div class="hamburger">
+      <input type="checkbox" name="pipa" id="menu-pipa" />
+      <label class="menu__btn" for="menu-pipa">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="span3"></span>
+        <span class="mnu-container">
+          <span class="mnu span4">M</span>
+          <span class="proba">
+            <span class="mnu span5">N</span>
+            <span class="mnu span6">U</span>
+          </span>
+        </span>
+      </label>
+      <ul class="menu__box">
+        <li class="menu__item blind"><a href="#"></a></li>
+        <li class="menu__item"><a href="#">Home</a></li>
+        <li class="menu__item"><a href="#skills">Skills</a></li>
+        <li class="menu__item"><a href="#portfolio">References</a></li>
+        <li class="menu__item"><a href="#cereer">Career</a></li>
+        <li class="menu__item"><a href="#education">Education</a></li>
+        <li class="menu__item"><a href="#contacts">Contacts</a></li>
+      </ul>
     </div>
-    <div class="valami">
-      <nav class="header-nav-container">
-        <ul class="header-menu">
-          <li><a href="#kapcsolat">Kapcsolat</a></li>
-          <li><a href="#tapasztalat">Tapasztalat</a></li>
-          <li><a href="#tanulmany">Tanulmányok</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  </nav>
 
   <main>
-    <section class="foto">
-
+    <section class="container section-info">
+      <div class="foto">
+        <img src="./images/andor.jpg" alt="Kovács Andor" />
+      </div>
+      <div class="section-info-my">
+        <h2>Kovács</h2>
+        <h2>Andor</h2>
+        <h1>Web Developer</h1>
+        <p>
+          2021 óta foglalkozom webfejlesztéssel, célom, hogy praktikus, gyors
+          webalkalmazásokat fejlesszek
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          accusamus praesentium, possimus, odit dolore aperiam atque provident
+          enim veritatis nam exercitationem fugit velit voluptatem sint at
+          temporibus quos illo rem cum. Rem eius sit explicabo architecto
+          laboriosam illum libero consequatur animi, voluptatum asperiores
+          provident vel ex deserunt, nemo quo aliquam!
+        </p>
+      </div>
     </section>
-
-    <section class="kozos my">
-      <h3>Rólam</h3>
-      <p>2021 óta foglalkozom szoftverfejlesztéssel főként az ipar számára.</p>
-
-    </section>
-    <section class="kozos tanulmany" id="tanulmany">
-      <h3>Tanulmányok</h3>
-      <ul>
-        <li><strong> -2005-2010</strong> BMF-KVK - villamosmérnök </li>
-        <li><strong>-2001-2005</strong> Déri Miksa Műszaki Technikum - érettségi </li>
-      </ul>
-    </section>
-
-    <section class="kozos tapasztalat" id="tapasztalat">
-      <h3>Tapasztalat</h3>
-      <ul>
-        <li><strong>-2017.10 - jelenleg</strong>
-        <li> Rendszrmérnök</li>
-        <li> Pneumatikus fékrendszerek gyártási szoftverének tervezése tesztelése vasúti berendezésekhez. </li>
-        <li><strong>-2010.11 - 2017.09 </strong>
-        <li> Gyártáselőkészítő (NPI)</li>
-        <li>Új termék bevezetése.</li>
-        <li>Prototípus és mintagyártás</li>
-        <li>Árajánlatok készítése, kezelése,elő-és utó kalkulációk készítése</li>
-        <li>Együttműködés ügyfelekkel és belső szervezeti egységekkel</li>
-        <li>Gyártásoptimalizálás</li>
-        <li>Gyártási technológia fejlesztése</li>
-        <li>2D-s és 3D-s rajzok készítése</li>
-        <li> <strong>-2009.09 - 2010.02.</strong>
-        <li> Szakmai gyakorlat - forgalomirányító berendezések gyártása,szervizelése </li>
-      </ul>
-    </section>
-
-    <section class="kozos cv">
-      <h3>Önéletrajz</h3>
-      <ul>
-        <li>angol <a href="https://www.google.com" target="_blank">Letöltés</a> </li>
-        <li>magyar <a href="https://www.google.com" target="_blank">Letöltés</a> </li>
-      </ul>
-    </section>
-
-    <section class="kozos skills">
-      <h3>Ismeretek</h3>
-      <div class="container">
-        <div class="skills-tn">
+    <section class="container section-skills" id="skills">
+      <h2 class="h2s">Skills</h2>
+      <div class="container-skills">
+        <div class="skills">
           <img src="./images/css3.png" alt="css" />
           <h4>CSS3</h4>
-          <p>ez meg az</p>
+          <!-- <p>ez meg az</p> -->
         </div>
-        <div class="skills-tn">
+        <div class="skills">
           <img src="./images/javascript.png" alt="js" />
           <h4>Javascript</h4>
-          <p>ez meg az</p>
+          <!-- <p>ez meg az</p> -->
         </div>
-        <div class="skills-tn">
+        <div class="skills">
           <img src="./images/html5.png" alt=" html" />
           <h4>HTML5</h4>
-          <p>ez meg az</p>
+          <!-- <p>ez meg az</p> -->
         </div>
-        <div class="skills-tn">
+        <div class="skills">
+          <img src="./images/phyton.png" alt=" html" />
+          <h4>Python</h4>
+          <!-- <p>ez meg az</p> -->
+        </div>
+        <div class="skills">
           <img src="./images/mysql.png" alt="sql" />
           <h4>SQL</h4>
-          <p>ez meg az</p>
+          <!-- <p>ez meg az</p> -->
+        </div>
+        <div class="skills">
+          <img src="./images/ptc.png" alt="sql" />
+          <h4>PTC Creo</h4>
+          <!-- <p>ez meg az</p> -->
         </div>
       </div>
     </section>
-
-    <section class="kozos contact">
+    <section class="container section-portfolio" id="portfolio">
+      <h2 class="h2s">References</h2>
+      <ul class="portfolio-list">
+        <li class="portfolio-item">1. projekt</li>
+        <li class="portfolio-item">2. projekt</li>
+        <li class="portfolio-item">3. projekt</li>
+        <li class="portfolio-item">4. projekt</li>
+        <li class="portfolio-item">5. projekt</li>
+        <li class="portfolio-item">6. projekt</li>
+      </ul>
+    </section>
+    <section class="container career" id="cereer">
+      <h2 class="h2s">Career</h2>
+      <div class="container-career">
+        <div class="jobs">
+          <img src="./images/work.svg" alt="work" />
+          <h4>2017.10 - jelenleg</h4>
+          <p>Rendszermérnök</p>
+          <p>
+            Pneumatikus fékrendszerek gyártási szoftverének tervezése
+            tesztelése vasúti berendezésekhez.
+          </p>
+        </div>
+        <div class="jobs">
+          <img src="./images/work.svg" alt="work" />
+          <h4>2010.11 - 2017.09</h4>
+          <p>Gyártáselőkészítő (NPI)</p>
+          <p>
+            Új termék bevezetése. - Prototípus és mintagyártás - Gyártási
+            dokumentációk készítése: (BOM)darablisták, munkaleírások,
+            gyárthatósági vizsgálat, műveleti utasítás - Árajánlatok
+            készítése, kezelése,elő-és utó kalkulációk készítése -
+            Együttműködés ügyfelekkel és belső szervezeti egységekkel -
+            Gyártásoptimalizálás - Gyártási technológia fejlesztése - 2D-s és
+            3D-s rajzok készítése
+          </p>
+        </div>
+        <div class="jobs">
+          <img src="./images/work.svg" alt="work" />
+          <h4>2009.09 - 2010.02</h4>
+          <p>Szakmai gyakorlat</p>
+          <p>
+            Forgalomirányító berendezések gyártása, szervizelése
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container education" id="education">
+      <h2 class="h2s">Education</h2>
+      <div class="container-edu">
+        <div class="edu">
+          <img src="./images/school.svg" alt="school" />
+          <h4>
+            2005 - 2010
+          </h4>
+          <p>
+            BMF-KVK - Villamosmérnök
+          </p>
+        </div>
+        <div class="edu">
+          <img src="./images/school.svg" alt="school" />
+          <h4>2001 - 2005</h4>
+          <p>
+            Déri Miksa Szakgimnázium és Szakközépiskola
+          </p>
+        </div>
+        <div class="edu">
+          <img src="./images/school.svg" alt="school" />
+          <h4>2000 - 2001</h4>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <section class="container section-contact" id="contacts">
+      <h2 class="h2s">Contacts</h2>
       <form action="https://formspree.io/f/xwkyvlpj" method="post" id="kapcsolat">
         <fieldset class="field">
-          <legend>Kapcsolat</legend>
           <div>
-            <label for="vezetéknév-id">Név:
-              <input type="text" name="Név" id="vezetéknév-id" placeholder="Írd be a neved" />
+            <label for="vezetéknév-id">Név: <br />
+              <input type="text" name="Név" id="vezetéknév-id" value="Írd be a neved" />
             </label>
           </div>
           <div>
             <label for="email-id">Email:</label>
-            <input type="email" name="fd" id="email-id" value="@" required />
+            <br />
+            <input type="email" name="fd" id="email-id" value="" />
           </div>
           <div>
             <label for="tel-id">Tel.:</label>
-            <input type="tel" id="tel-id" name="phone" placeholder="123-45-678"
-              pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" value="+" />
+            <br />
+            <input type="tel" id="tel-id" name="phone" placeholder="" pattern="+[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}"
+              value="" />
+            <br />
             <small>Formátum: +36-30-123-4567</small>
           </div>
           <div>
             <label>
               Üzenet:
-              <textarea name="Üzenet" cols="30" rows="10" placeholder="Kérdések"></textarea>
+              <br />
+              <textarea cols="30" rows="10" placeholder="Kérdések" id="Kérdések"></textarea>
             </label>
           </div>
-          <input type="submit" value="Küldés" />
+          <input class="submit" type="submit" value="Submit" />
         </fieldset>
       </form>
-
     </section>
   </main>
-  <footer class="kozos">
+  <footer class="container footer" id="footer">
     <nav>
       <ul class="social-links">
-        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-
+        <li>
+          <a href="#"><img src="./images/github.svg" alt="git" class="fab" /></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
       </ul>
     </nav>
-    <p>Tel.: 70-281-1234 </p>
-    Copyright &copy;
-    2022 Andor Kovács
+    <p>kovacsandor86@gmail.com</p>
+    <p>Copyright &copy; 2022 Andor Kovács</p>
   </footer>
 </body>
 
