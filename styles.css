@@ -125,7 +125,8 @@ html {
 
 
 .menu__item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 12px 8px;
   width: 100%;
   height: 50px;
@@ -139,9 +140,12 @@ html {
 
 .menu__item:hover {
   text-shadow: 2px 2px 5px var(--color-hover);
-  background-color: gray;
+  background-color: rgb(90, 131, 119);
   transition: 2s;
+}
 
+.menu__item:hover a {
+  color: black;
 }
 
 .span1 {
@@ -164,6 +168,7 @@ html {
 
 #menu-pipa:checked~.menu__btn>.span2 {
   transform: rotate(45deg);
+  top: 18px;
 }
 
 #menu-pipa:checked~.menu__btn>.span3 {
@@ -205,7 +210,7 @@ html {
 /* -----------------------------általános----------------------------------- */
 h4 {
   display: inline-block;
-  border-bottom: 1px solid var(--color-letter3);
+  text-decoration: none;
 }
 
 .container {
@@ -219,6 +224,10 @@ h4 {
   font-weight: 200;
   padding: 4rem 0 0.5rem 0;
   border-bottom: 1px solid var(--color-letter);
+}
+
+.phy {
+  transform: scale(1.16);
 }
 
 .skills img {
@@ -273,14 +282,22 @@ p {
 }
 
 .portfolio-item a img {
+  padding: 0.5rem 1rem;
   width: 100%;
   height: 32vw;
   max-height: 400px;
   /* problem */
 }
 
+.portfolio-item>h4 {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
 .foto img {
-  opacity: 0.6;
+  /* opacity: 0.6; */
   width: 20vw;
   height: 15vw;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
@@ -342,6 +359,25 @@ main h1 {
   font-weight: 900;
 }
 
+/* -------------------angle-up------------------------- */
+
+.angle-up {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  /* box-shadow: 2px 3px 7px rgb(35, 181, 181, 0.5); */
+  border: 2px solid var(--color-letter);
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.angle-up:hover {
+  transform: scale(1.3);
+}
+
 /* -------------------contacts------------------------- */
 
 form {
@@ -361,9 +397,11 @@ form {
 }
 
 .submit.submit {
+  margin: 0.5rem;
   height: 2rem;
   width: 5rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .submit:hover {
@@ -396,8 +434,10 @@ textarea {
 
 .field input,
 textarea {
+  margin: 0.2rem 0;
   background-color: var(--color-letter);
   border-radius: 5px;
+  color: black;
 }
 
 .fab {
@@ -435,13 +475,23 @@ footer p {
   margin: 0 10px 0 10px;
 }
 
+.blind a {
+  color: var(--color-menu);
+}
+
 .blind {
   height: 5rem;
 }
 
-
 @media screen and (max-width : 576px) {
+  .container {
+    padding: 1rem 2rem;
+  }
 
+  .portfolio-item a img {
+    height: 52vw;
+
+  }
 
   .portfolio-list {
     grid-template-columns: auto;
@@ -552,7 +602,7 @@ footer p {
     transition-duration: 0.1s;
     background-color: var(--color-menu);
     opacity: 0;
-    padding: 28px 8px 0 8px;
+    padding: 0px 8px 0 8px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -688,7 +738,7 @@ footer p {
   .footer>nav {
     display: inline-block;
     position: fixed;
-    bottom: 200px;
+    bottom: 100px;
     left: 10px;
     color: var(--color-letter);
     z-index: 10;
@@ -777,5 +827,6 @@ footer p {
   .container-header {
     background-size: 100% 150%;
     height: 35vw;
+    max-height: 500px;
   }
 }
