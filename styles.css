@@ -100,10 +100,10 @@ html {
   background-color: transparent;
 }
 
-.proba {
+/* .proba {
   padding-top: 40px;
   background-color: transparent;
-}
+} */
 
 .span6 {
   line-height: 28px;
@@ -127,7 +127,6 @@ html {
 .menu__item {
   display: flex;
   align-items: center;
-  padding: 12px 8px;
   width: 100%;
   height: 50px;
   font-family: "Roboto", sans-serif;
@@ -136,12 +135,23 @@ html {
   transition-duration: 0.1s;
   background-color: var(--color-menu);
   opacity: 0;
+  visibility: hidden;
+}
+
+.menu__item a {
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .menu__item:hover {
   text-shadow: 2px 2px 5px var(--color-hover);
   background-color: rgb(90, 131, 119);
-  transition: 2s;
+  transition: 0.5s;
 }
 
 .menu__item:hover a {
@@ -180,6 +190,7 @@ html {
   opacity: 1;
   transition-duration: .6s;
   z-index: 10;
+  visibility: visible;
 }
 
 /* --------------------------header-------------------- */
@@ -204,7 +215,7 @@ html {
   visibility: hidden;
   position: fixed;
   top: 0;
-
+  z-index: 1;
 }
 
 /* -----------------------------általános----------------------------------- */
@@ -269,7 +280,7 @@ p {
 
 /* ---------------------skills------------------------------------------- */
 .skills>h4 {
-  font-size: 10px;
+  font-size: 0.9rem;
   padding-top: 0.5rem;
 }
 
@@ -297,7 +308,7 @@ p {
 }
 
 .foto img {
-  /* opacity: 0.6; */
+  opacity: 0.8;
   width: 20vw;
   height: 15vw;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
@@ -340,7 +351,7 @@ main h1 {
 }
 
 .portfolio-item {
-  border: 1px solid black;
+  border: 1px solid var(--color-letter);
 }
 
 .container-skills {
@@ -363,7 +374,7 @@ main h1 {
 
 .angle-up {
   position: fixed;
-  right: 2rem;
+  right: 1rem;
   bottom: 2rem;
   display: block;
   height: 2rem;
@@ -432,16 +443,24 @@ textarea {
   margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
+/* 
+.field input {
+  height: 2rem;
+
+} */
+
 .field input,
 textarea {
   margin: 0.2rem 0;
   background-color: var(--color-letter);
   border-radius: 5px;
   color: black;
+  font-size: 1rem;
 }
 
 .fab {
   color: var(--color-letter);
+  background-color: transparent;
 }
 
 .fab:hover {
@@ -469,10 +488,12 @@ footer p {
   list-style: none;
   padding: 2rem 0 1rem 0;
   font-size: 1.5rem;
+  background-color: transparent;
 }
 
 .social-links li {
   margin: 0 10px 0 10px;
+  background-color: transparent;
 }
 
 .blind a {
@@ -570,10 +591,10 @@ footer p {
     background-color: transparent;
   }
 
-  .proba {
+  /* .proba {
     padding-top: 40px;
     background-color: transparent;
-  }
+  } */
 
   .span6 {
     line-height: 28px;
@@ -590,7 +611,7 @@ footer p {
     align-items: center;
     visibility: visible;
     transition-duration: 0.1s;
-    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 77%);
+    /* box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 77%); */
   }
 
   .menu__item {
@@ -643,7 +664,7 @@ footer p {
   }
 
   .menu__box li {
-    transition: all 2s;
+    transition: all 1s;
   }
 
   .menu__box li :after {
@@ -660,9 +681,9 @@ footer p {
 
   .menu__box li :hover:after {
     z-index: -10;
-    animation: fill 1s forwards;
-    -webkit-animation: fill 1s forwards;
-    -moz-animation: fill 1s forwards;
+    animation: fill 0.5s forwards;
+    -webkit-animation: fill 0.5s forwards;
+    -moz-animation: fill 0.5s forwards;
     opacity: 1;
   }
 
@@ -700,7 +721,8 @@ footer p {
 
   #menu-pipa:checked~.menu__box>.menu__item {
     opacity: 1;
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--color-letter);
   }
 
 
@@ -826,7 +848,7 @@ footer p {
 
   .container-header {
     background-size: 100% 150%;
-    height: 35vw;
+    height: calc(100vh/2);
     max-height: 500px;
   }
 }
