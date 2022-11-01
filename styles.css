@@ -401,6 +401,7 @@ main h1 {
   flex-direction: column;
   align-items: center;
   margin: 10px;
+  width: 4rem;
 }
 
 /* -------------------angle-up------------------------- */
