@@ -1,3 +1,6 @@
 [submodule "gallery"]
 	path = gallery
 	url = https://github.com/andor-kovacs/gallery.git
+[submodule "Country_and_food_API"]
+	path = Country_and_food_API
+	url = https://github.com/andor-kovacs/Country_and_food_API.git

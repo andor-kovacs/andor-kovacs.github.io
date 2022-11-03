@@ -307,6 +307,8 @@ p {
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 50% 50%;
+  row-gap: 2rem;
+  column-gap: 1rem;
 }
 
 .portfolio-item a {
@@ -341,6 +343,15 @@ p {
   letter-spacing: 0.3rem;
   margin: 1rem 1rem;
 }
+
+.portfolio-item>div>h5 {
+  color: var(--color-letter);
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+  margin: -12px 1rem 10px 1rem;
+}
+
 
 .foto img {
   opacity: 0.8;
@@ -564,6 +575,7 @@ footer p {
 
   .portfolio-list {
     grid-template-columns: auto;
+    row-gap: 2rem;
   }
 
 }
