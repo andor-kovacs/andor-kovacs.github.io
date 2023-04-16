@@ -4,3 +4,6 @@
 [submodule "Country_and_food_API"]
 	path = Country_and_food_API
 	url = https://github.com/andor-kovacs/Country_and_food_API.git
+[submodule "student-recorder"]
+	path = student-recorder
+	url = https://github.com/andor-kovacs/student-recorder.git
